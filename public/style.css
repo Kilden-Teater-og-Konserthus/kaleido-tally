@@ -1,0 +1,48 @@
+*{
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tallyRow {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 970px;
+    flex: 1;
+    width: 100%;
+    padding: 10px;
+}
+
+.tallyRow.header {
+    font-weight: bold;
+}
+
+.tallyRow>* {
+    flex: 1;
+    text-align: center;
+    margin: 0 5px;
+    overflow: hidden;
+}
+
+.tallyID {
+    /* flex: 0.2; */
+}
+
+button.addTallyButton {margin-top: 10px;}
+
+.tallyRow:nth-child(odd) {
+    background-color: rgba(0,0,0,0.1);
+}
+
+input.cameraSelect {
+    /* max-width: 100px; */
+}
